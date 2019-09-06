@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: travel-management-trip-query-api
+  cloud:
+    config:
+      fail-fast: true
+      uri: http://localhost:8763
+      username: root
+      password: root
