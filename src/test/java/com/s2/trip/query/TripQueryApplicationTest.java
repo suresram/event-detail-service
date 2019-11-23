@@ -71,7 +71,7 @@ public class TripQueryApplicationTest {
 		headers.set("userId", "driver1");
 		headers.set("roles", "DRIVER");
 		ResponseEntity<String> response = restTemplate.exchange(
-				new URL("http://localhost:" + port + "/trip-query/summary").toString(), HttpMethod.GET,
+				new URL("http://localhost:" + port + "/trip-query/v1/summary").toString(), HttpMethod.GET,
 				new HttpEntity<>(headers), String.class);
 		assertTrue(StringUtils.contains(response.getBody(), "driverId1"));
 	}
@@ -85,7 +85,7 @@ public class TripQueryApplicationTest {
 		headers.set("userId", "admin1");
 		headers.set("roles", "ADMIN");
 		ResponseEntity<String> response = restTemplate.exchange(
-				new URL("http://localhost:" + port + "/trip-query/summary").toString(), HttpMethod.GET,
+				new URL("http://localhost:" + port + "/trip-query/v1/summary").toString(), HttpMethod.GET,
 				new HttpEntity<>(headers), String.class);
 		assertTrue(StringUtils.contains(response.getBody(), "driverId1"));
 	}
