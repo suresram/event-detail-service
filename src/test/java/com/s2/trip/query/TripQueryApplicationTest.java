@@ -56,7 +56,7 @@ public class TripQueryApplicationTest {
 		headers.set("userId", "rider1");
 		headers.set("roles", "RIDER");
 		ResponseEntity<String> response = restTemplate.exchange(
-				new URL("http://localhost:" + port + "/trip-query/summary").toString(), HttpMethod.GET,
+				new URL("http://localhost:" + port + "/trip-query/v1/summary").toString(), HttpMethod.GET,
 				new HttpEntity<>(headers), String.class);
 		assertTrue(StringUtils.contains(response.getBody(), "riderId1"));
 	}
