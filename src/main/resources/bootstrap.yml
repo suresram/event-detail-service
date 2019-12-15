@@ -1,6 +1,6 @@
 spring:
   application:
-    name: travel-management-trip-query-api
+    name: event-detail-service
   cloud:
     config:
       fail-fast: true

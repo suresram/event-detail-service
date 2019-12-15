@@ -1,11 +1,11 @@
-package com.s2.trip.query;
+package com.s2.event.detail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TripQueryApplication {
+public class EventDetailApplication {
     public static void main(String[] args) {
-        SpringApplication.run(TripQueryApplication.class, args);
+        SpringApplication.run(EventDetailApplication.class, args);
     }
 }
