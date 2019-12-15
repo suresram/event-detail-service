@@ -50,7 +50,7 @@ public class EventDetailApplicationTest {
 
 	@Test
 	public void testAllOpenEvents() throws Exception {
-		Mockito.when(eventDetailRepository.findByEventStatus(Mockito.anyString())).thenReturn(EventDetailApplicationTest.mockEvent());
+		Mockito.when(eventDetailRepository.findByStatus(Mockito.anyString())).thenReturn(EventDetailApplicationTest.mockEvent());
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(new MediaType[] { MediaType.APPLICATION_JSON }));
 		headers.setContentType(MediaType.APPLICATION_JSON);

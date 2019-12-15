@@ -23,7 +23,7 @@ public class EventDetailService {
 		if (StringUtils.contains(roles, Roles.ADMIN.name()) && StringUtils.equalsIgnoreCase(eventStatus, "all")) {
 			return eventDetailRepository.findAll();
 		} else {
-			return eventDetailRepository.findByEventStatus(eventStatus);
+			return eventDetailRepository.findByStatus(eventStatus);
 		}
 	}
 }

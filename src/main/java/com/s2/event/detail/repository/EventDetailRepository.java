@@ -8,6 +8,6 @@ import com.s2.event.detail.model.Event;
 
 public interface EventDetailRepository extends MongoRepository<Event, String> {
 
-	List<Event> findByEventStatus(String eventStatus);
+	List<Event> findByStatus(String eventStatus);
 
 }
