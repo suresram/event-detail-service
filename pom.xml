@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.s2.cloud</groupId>
-	<artifactId>travel-management-trip-query-api</artifactId>
+	<artifactId>event-detail-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Travel Management Trip Query API</name>
-	<description>Travel Management Trip Query API</description>
+	<name>Event Detail Service</name>
+	<description>Event Detail Service</description>
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
